@@ -84,7 +84,7 @@ And there is also a lot of advanced stuff that I managed to fully automate, like
 - Open a terminal and install git and MobilePassThrough by typing the following, pressing enter after each line:
     ``` Bash
     sudo dnf install git -y # Install git
-    git clone https://github.com/T-vK/MobilePassThrough.git # Clone the project
+    git clone https://github.com/microfire21/MobilePassThrough.git # Clone the project
     cd MobilePassThrough # Enter the project directory
     ./mbpt.sh configure # Create a custom config file interactively (optional)
     ./mbpt.sh auto # Dependency installation; kernel param config; bumblebee / nvidia driver installation; windows ISO download; reboot to load new kernel params; create a helper iso with drivers and autounattended config for Windows; create and start VM; install Windows in the VM fully unattended; install drivers and looking glass in the VM automatically; check for error 43 automatically and show a warning if it occurs
