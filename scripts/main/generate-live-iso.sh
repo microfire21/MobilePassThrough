@@ -51,7 +51,8 @@ if [ ! -d "${THIRDPARTY_DIR}/livecd-tools" ]; then
     cd "${THIRDPARTY_DIR}"
     git clone https://github.com/livecd-tools/livecd-tools.git #--branch=livecd-tools-28.3 --single-branch livecd-tools
     cd livecd-tools
-    git checkout 9c7f40e7edae3475be9a0b8afd7b390a7ad3bfbc
+    git checkout 4acb0c9515783446c3ad87bf29ec049ed835f788 #--updated for fedora 37
+	#git checkout 9c7f40e7edae3475be9a0b8afd7b390a7ad3bfbc
     sudo make install
     sudo pip3 install urlgrabber
 else
