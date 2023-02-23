@@ -12,7 +12,7 @@ alias getExecPkg="'${PACKAGE_MANAGER}' install --executables"
 MODE="$1"
 DRIVE="$2"
 
-ISO_DOWNLOAD_URL="https://download.nus.edu.sg/mirror/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
+ISO_DOWNLOAD_URL="https://download-cc-rdu01.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso"
 ISO_FILE="${LIVE_ISO_FILES_DIR}/Fedora-Workstation-Live-x86_64-37-1.7.iso"
 ISO_FILE_MODIFIED="${LIVE_ISO_FILES_DIR}/Fedora-Workstation-Live-x86_64-37-1.7.modified.iso"
 #ISO_DOWNLOAD_URL="https://download.fedoraproject.org/pub/fedora/linux/releases/34/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-34-1.2.iso"
@@ -51,8 +51,7 @@ if [ ! -d "${THIRDPARTY_DIR}/livecd-tools" ]; then
     cd "${THIRDPARTY_DIR}"
     git clone https://github.com/livecd-tools/livecd-tools.git #--branch=livecd-tools-28.3 --single-branch livecd-tools
     cd livecd-tools
-    git checkout 4acb0c9515783446c3ad87bf29ec049ed835f788 #--updated for Fedora 37--revert to below line to go back to 34
-	#git checkout 9c7f40e7edae3475be9a0b8afd7b390a7ad3bfbc
+    git checkout 9c7f40e7edae3475be9a0b8afd7b390a7ad3bfbc
     sudo make install
     sudo pip3 install urlgrabber
 else
