@@ -1,5 +1,7 @@
 # MobilePassThrough
 
+Full credits to team before me....updating for new fedora 37 and a few bug fixes and tweaks here and there lol.
+
 ## Introduction
 The goal of this project is to make GPU passthrough on x64 notebooks/tablets as easy and accessible as possible.  
 To achieve that goal I have written a collection of scripts [accessible via mbpt.sh](https://github.com/T-vK/MobilePassThrough#how-to-use-mbptsh)
